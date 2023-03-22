@@ -1,5 +1,3 @@
-#This script is designed to install all of the nescessary tools I will need during CCDC comnpetition. It also removes someone useless services and does basic hardeing.
-
 #!/bin/bash
 
 #Removes useless programs

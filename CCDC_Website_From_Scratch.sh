@@ -1,5 +1,3 @@
-#This script is designed to create a CCDC website used on their ESXI server off of a fresh built CentOS 7 machine. It also adds a SSL certificate and changes the hostname
-
 #!/bin/bash
 
 #Defines color text

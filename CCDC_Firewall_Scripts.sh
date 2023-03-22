@@ -1,5 +1,3 @@
-#This script is specfic for CentOS. It is designed to remove the firewalld firewall and replace it with iptables and configure it to be in the guidelines of the CCDC cyber competitions scoreing engine. It also backs up the firewall rules. Additonally IPv6 is disabled via the firewall and the system for layered security.
-
 #!/bin/bash
 
 #Run program after running inprograms.sh file

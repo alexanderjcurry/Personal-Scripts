@@ -80,27 +80,27 @@ while true; do
         read -p "Enter the file name to restore the rules from: " filename
         echo -e "${RED}Restoring rules from $filename...${NC}"
         if [ -f "$filename" ]; then
-iptables-restore < "$filename"
-echo -e "${RED}Rules restored from $filename!${NC}"
-else
-echo -e "${RED}Error: File not found. Please enter a valid file name.${NC}"
-fi
-;;
-8 )
-echo -e "${GREEN}Restarting iptables service...${NC}"
-systemctl restart iptables
-echo -e "${GREEN}Iptables service restarted!${NC}"
-;;
-9 )
-echo -e "${RED}Stopping iptables service...${NC}"
-systemctl stop iptables
-echo -e "${RED}Iptables service stopped!${NC}"
-;;
-10 )
-echo -e "${GREEN}Checking iptables status...${NC}"
-systemctl status iptables
-;;
-11 )
+	iptables-restore < "$filename"
+	echo -e "${RED}Rules restored from $filename!${NC}"
+	else
+	echo -e "${RED}Error: File not found. Please enter a valid file name.${NC}"
+	fi
+	;;
+      8 )
+	echo -e "${GREEN}Restarting iptables service...${NC}"
+	systemctl restart iptables
+	echo -e "${GREEN}Iptables service restarted!${NC}"
+	;;
+      9 )
+	echo -e "${RED}Stopping iptables service...${NC}"
+	systemctl stop iptables
+	echo -e "${RED}Iptables service stopped!${NC}"
+	;;
+     10 )
+	echo -e "${GREEN}Checking iptables status...${NC}"
+	systemctl status iptables
+	;;
+     11 )
 	echo -e "${GREEN}Exiting script...${NC}"
 	exit 0
 	;;
